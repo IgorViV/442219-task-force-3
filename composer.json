@@ -6,5 +6,10 @@
             "email": "iupgrader@mail.ru"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Taskforce\\": "src/"
+        }
+    },
     "require": {}
 }
