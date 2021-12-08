@@ -14,7 +14,7 @@ class Task
     const ACTION_REFUSE = 'action_refuse';    // Action refused
     const ACTION_DONE = 'action_done';        // Action completed
 
-    public $currentStatus = self::STATUS_NEW;
+    protected $currentStatus = self::STATUS_NEW;
     public $idCustomer;
     public $idPerformer;
 
