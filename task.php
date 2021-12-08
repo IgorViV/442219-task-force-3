@@ -1,5 +1,6 @@
 <?php
-    require_once './src/Task.php';
+    use Taskforce\logic\Task;
+    require_once 'vendor/autoload.php';
 
     $newTask = new Task(1, 1);
 
@@ -83,4 +84,3 @@
         $newTask->rulesForActionsPerformer[Task::STATUS_WORK], 
         'available action performer'
     );
-?>

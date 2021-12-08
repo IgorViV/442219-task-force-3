@@ -1,7 +1,7 @@
 # Личный проект «TaskForce»
 
 * Студент: [Игорь Влащенко](https://up.htmlacademy.ru/yii/3/user/442219).
-* Наставник: [Денис Ходаковский](https://htmlacademy.ru/profile/id1232355).
+* Наставник: [Сергей Титаков](https://htmlacademy.ru/profile/id1243803).
 
 ---
 
