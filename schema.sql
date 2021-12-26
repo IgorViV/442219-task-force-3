@@ -8,11 +8,11 @@ CREATE DATABASE IF NOT EXISTS taskforce
 USE taskforce;
 
 -- -----------------------------------------------------
--- Table `taskforce`.`roles`
+-- Table `taskforce`.`cities`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS roles (
+CREATE TABLE IF NOT EXISTS cities (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  role_name VARCHAR(45) NOT NULL
+  city_name VARCHAR(128) NOT NULL
 ) ENGINE = InnoDB;
 
 -- -----------------------------------------------------
@@ -24,12 +24,10 @@ CREATE TABLE IF NOT EXISTS users (
   email VARCHAR(128) NOT NULL UNIQUE,
   user_name VARCHAR(128) NOT NULL,
   user_password VARCHAR(128) NOT NULL,
-  city VARCHAR(128) NOT NULL,
-  avatar_url VARCHAR(2048),
-  rating INT UNSIGNED,
-  role_id INT UNSIGNED NOT NULL,
-  FOREIGN KEY (role_id) 
-    REFERENCES roles(id) 
+  is_performer TINYINT NULL DEFAULT 0,
+  city_id INT UNSIGNED NOT NULL,
+  FOREIGN KEY (city_id) 
+    REFERENCES cities(id) 
     ON DELETE CASCADE 
     ON UPDATE CASCADE
 ) ENGINE = InnoDB;
@@ -44,20 +42,30 @@ CREATE TABLE IF NOT EXISTS categories (
 ) ENGINE = InnoDB;
 
 -- -----------------------------------------------------
--- Table `taskforce`.`cities`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS cities (
-  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  city_name VARCHAR(128) NOT NULL
-) ENGINE = InnoDB;
-
--- -----------------------------------------------------
 -- Table `taskforce`.`statuses`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS statuses (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   status VARCHAR(45) NOT NULL,
   alias VARCHAR(45) NOT NULL
+) ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `taskforce`.`profiles`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS profiles (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  birthday DATE NULL,
+  phone VARCHAR(11) NULL,
+  telegram VARCHAR(64) NULL,
+  about TEXT NULL,
+  count_fail INT UNSIGNED NULL,
+  avatar_url VARCHAR(2048) NULL,
+  FOREIGN KEY (user_id)
+    REFERENCES users(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 ) ENGINE = InnoDB;
 
 -- -----------------------------------------------------
@@ -70,17 +78,16 @@ CREATE TABLE IF NOT EXISTS tasks (
   description TEXT NOT NULL,
   latitude VARCHAR(128) NULL,
   longitude VARCHAR(128) NULL,
-  finance INT UNSIGNED NULL,
+  finance INT NULL,
   dedline DATE NULL,
-  performer_id INT UNSIGNED NULL,
-  file_url VARCHAR(2048) NULL,
   author_id INT UNSIGNED NOT NULL,
   category_id INT UNSIGNED NOT NULL,
   city_id INT UNSIGNED NOT NULL,
   status_id INT UNSIGNED NOT NULL,
-  FOREIGN KEY (author_id) 
-    REFERENCES users(id) 
-    ON DELETE CASCADE 
+  performer_id INT UNSIGNED NOT NULL,
+  FOREIGN KEY (author_id)
+    REFERENCES users(id)
+    ON DELETE CASCADE
     ON UPDATE CASCADE,
   FOREIGN KEY (category_id)
     REFERENCES categories(id)
@@ -93,7 +100,11 @@ CREATE TABLE IF NOT EXISTS tasks (
   FOREIGN KEY (status_id)
     REFERENCES statuses(id)
     ON DELETE CASCADE
-    ON UPDATE CASCADE
+    ON UPDATE CASCADE,
+  FOREIGN KEY (performer_id)
+    REFERENCES profiles(id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
 -- -----------------------------------------------------
@@ -102,16 +113,16 @@ CREATE TABLE IF NOT EXISTS tasks (
 CREATE TABLE IF NOT EXISTS responses (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   created_at DATETIME NOT NULL,
-  text_content TEXT NOT NULL,
-  price INT UNSIGNED NULL,
-  performer_id INT UNSIGNED NOT NULL,
+  text_content TEXT NULL,
+  price INT NULL,
   task_id INT UNSIGNED NOT NULL,
-  FOREIGN KEY (performer_id)
-    REFERENCES users(id)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
+  performer_id INT UNSIGNED NOT NULL,
   FOREIGN KEY (task_id)
     REFERENCES tasks(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  FOREIGN KEY (performer_id)
+    REFERENCES profiles(id)
     ON DELETE CASCADE
     ON UPDATE CASCADE
 ) ENGINE = InnoDB;
@@ -122,14 +133,44 @@ CREATE TABLE IF NOT EXISTS responses (
 CREATE TABLE IF NOT EXISTS feedbacks (
   id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   created_at DATETIME NOT NULL,
-  text_content TEXT NOT NULL,
-  rating INT UNSIGNED NOT NULL,
+  comment TEXT NULL,
+  evaluation INT NOT NULL,
   author_id INT UNSIGNED NOT NULL,
   task_id INT UNSIGNED NOT NULL,
   FOREIGN KEY (author_id)
     REFERENCES users(id)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
+  FOREIGN KEY (task_id)
+    REFERENCES tasks(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+) ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `taskforce`.`performers_has_categories`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS performers_has_categories (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  performer_id INT UNSIGNED NOT NULL,
+  category_id INT UNSIGNED NOT NULL,
+  FOREIGN KEY (performer_id)
+    REFERENCES profiles(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  FOREIGN KEY (category_id)
+    REFERENCES categories(id)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+) ENGINE = InnoDB;
+
+-- -----------------------------------------------------
+-- Table `taskforce`.`files`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS files (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  file_url VARCHAR(2048) NOT NULL,
+  task_id INT UNSIGNED NOT NULL,
   FOREIGN KEY (task_id)
     REFERENCES tasks(id)
     ON DELETE CASCADE

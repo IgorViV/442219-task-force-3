@@ -1,6 +1,8 @@
 <?php
 namespace Taskforce\logic;
 
+require_once 'vendor/autoload.php';
+
 class Task 
 {
     const STATUS_NEW = 'new';                 // The task has been published, 
@@ -17,18 +19,11 @@ class Task
     protected $currentStatus = self::STATUS_NEW;
     public $idCustomer;
     public $idPerformer;
+    public $idCurrentUser;
 
-    public $rulesForActionsCustomer = [
-        self::STATUS_NEW => self::ACTION_CANCEL,
-        self::STATUS_WORK => self::ACTION_DONE,
-    ];
-    public $rulesForActionsPerformer = [
-        self::STATUS_NEW => self::ACTION_RESPOND,
-        self::STATUS_WORK => self::ACTION_REFUSE,
-    ];
-
-    public function __construct($idCustomer, $idPerformer)
+    public function __construct($idCurrentUser, $idCustomer, $idPerformer = 0)
     {
+        $this->idCurrentUser = $idCurrentUser;
         $this->idCustomer = $idCustomer;
         $this->idPerformer = $idPerformer;
     }
@@ -82,24 +77,27 @@ class Task
     }
 
     /**
-     * Gets available actions for current status for customer
+     * Gets available actions for current status
+     * 
+     * @param bool $isPerformer The role of the user - performer
+     * 
+     * @return object
      */
-    public function getAvailableActionsCustomer()
+    public function getAvailableActions($isPerformer)
     {
-        if ($this->currentStatus === self::STATUS_NEW || $this->currentStatus === self::STATUS_WORK) {
-            return $this->rulesForActionsCustomer[$this->currentStatus];
+        $availableAction = null;
+        if ($this->currentStatus === self::STATUS_NEW) {
+            $availableAction = !$isPerformer ? 
+                new CancelAction($this->idCurrentUser, $this->idCustomer) : 
+                new RespondAction($this->idCurrentUser, $this->idPerformer);
+            return $availableAction->compareUsers() ? $availableAction : null;
         }
-        return null;
-    }
-
-    /**
-     * Gets available actions for current status for performer
-     */
-    public function getAvailableActionsPerformer()
-    {
-        if ($this->currentStatus === self::STATUS_NEW || $this->currentStatus === self::STATUS_WORK) {
-            return $this->rulesForActionsPerformer[$this->currentStatus];
+        if ($this->currentStatus === self::STATUS_WORK) {
+            $availableAction = !$isPerformer ?
+                new DoneAction($this->idCurrentUser, $this->idCustomer) :
+                new RefuseAction($this->idCurrentUser, $this->idPerformer);
+            return $availableAction->compareUsers() ? $availableAction : null;
         }
-        return null;
+        return $availableAction;
     }
 }
