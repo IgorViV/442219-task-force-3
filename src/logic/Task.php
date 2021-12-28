@@ -1,7 +1,10 @@
 <?php
+declare(strict_types=1);
+
 namespace Taskforce\logic;
 
-require_once 'vendor/autoload.php';
+use Taskforce\exceptions\ActionTaskException;
+use Taskforce\exceptions\StatusTaskException;
 
 class Task 
 {
@@ -21,17 +24,25 @@ class Task
     public $idPerformer;
     public $idCurrentUser;
 
-    public function __construct($idCurrentUser, $idCustomer, $idPerformer = 0)
+    /**
+     * throw StatusTaskException
+     */
+    public function __construct(string $currentStatus, int $idCurrentUser, int $idCustomer, int $idPerformer = 0)
     {
+        $this->currentStatus = $currentStatus;
         $this->idCurrentUser = $idCurrentUser;
         $this->idCustomer = $idCustomer;
         $this->idPerformer = $idPerformer;
+
+        if (!isset($this->getMapStatus()[$currentStatus])) {
+            throw new StatusTaskException("Указан неверный статус задания");
+        }
     }
 
     /**
      * Returns a status map
      */
-    public function getMapStatus()
+    public function getMapStatus(): array
     {
         return [
             self::STATUS_NEW => 'Новое',
@@ -45,7 +56,7 @@ class Task
     /**
      * Returns an action map
      */
-    public function getMapAction()
+    public function getMapAction(): array
     {
         return [
             self::ACTION_CANCEL => 'Отменить',
@@ -57,9 +68,14 @@ class Task
 
     /**
      * Gets the following status after this action
+     * 
+     * trow ActionTaskException
      */
-    public function getFollowingStatus($action)
+    public function getFollowingStatus(string $action): string
     {
+        if (!isset($this->getMapAction()[$action])) {
+            throw new ActionTaskException("Указанное действие не существует");
+        }
         if ($action === self::ACTION_CANCEL) {
             return $this->currentStatus = self::STATUS_CANCELED;
         }
@@ -81,9 +97,9 @@ class Task
      * 
      * @param bool $isPerformer The role of the user - performer
      * 
-     * @return object
+     * @return object Action method class
      */
-    public function getAvailableActions($isPerformer)
+    public function getAvailableActions(bool $isPerformer): ?object
     {
         $availableAction = null;
         if ($this->currentStatus === self::STATUS_NEW) {

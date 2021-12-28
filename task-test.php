@@ -1,4 +1,6 @@
 <?php
+    declare(strict_types=1);
+
     use Taskforce\logic\Task;
     use Taskforce\logic\CancelAction;
     use Taskforce\logic\DoneAction;
@@ -11,8 +13,9 @@
     $idCustomer = 1;
     $idPerformer = 2;
     $isPerformer = true;
+    $currentStatus = 'new';
 
-    $newTask = new Task($idCurrentUser, $idCustomer, $idPerformer);
+    $newTask = new Task($currentStatus, $idCurrentUser, $idCustomer, $idPerformer);
     
     /**
      * Checking class methods
@@ -101,8 +104,9 @@
     $idCustomer = 1;
     $idPerformer = 2;
     $isPerformer = true;
+    $currentStatus = 'new';
 
-    $secondTask = new Task($idCurrentUser, $idCustomer, $idPerformer);
+    $secondTask = new Task($currentStatus, $idCurrentUser, $idCustomer, $idPerformer);
 
     assert(
         $secondTask->getAvailableActions(!$isPerformer) === null, 
