@@ -1,17 +1,19 @@
 <?php
+declare(strict_types=1);
+
 namespace Taskforce\logic;
 
 class CancelAction extends AbstractBaseAction
 {
-    public function getTitle() 
+    public function getTitle(): string 
     {
         return 'Отменить';
     }
-    public function getName()
+    public function getName(): string
     {
         return 'action_cancel';
     }
-    public function compareUsers() 
+    public function compareUsers(): bool 
     {
         return $this->idCurrentUser === $this->idAcceptableUser;
     }
