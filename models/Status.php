@@ -53,6 +53,6 @@ class Status extends \yii\db\ActiveRecord
      */
     public function getTasks()
     {
-        return $this->hasMany(Tasks::className(), ['status_id' => 'id']);
+        return $this->hasMany(Task::className(), ['status_id' => 'id']);
     }
 }

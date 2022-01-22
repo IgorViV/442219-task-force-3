@@ -41,7 +41,7 @@ class User extends \yii\db\ActiveRecord
             [['is_performer', 'cities_id'], 'integer'],
             [['user_name', 'email', 'user_password'], 'string', 'max' => 128],
             [['email'], 'unique'],
-            [['cities_id'], 'exist', 'skipOnError' => true, 'targetClass' => Cities::className(), 'targetAttribute' => ['cities_id' => 'id']],
+            [['cities_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::className(), 'targetAttribute' => ['cities_id' => 'id']],
         ];
     }
 
@@ -68,7 +68,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getCities()
     {
-        return $this->hasOne(Cities::className(), ['id' => 'cities_id']);
+        return $this->hasOne(City::className(), ['id' => 'cities_id']);
     }
 
     /**
@@ -78,7 +78,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getFeedbacks()
     {
-        return $this->hasMany(Feedbacks::className(), ['author_id' => 'id']);
+        return $this->hasMany(Feedback::className(), ['author_id' => 'id']);
     }
 
     /**
@@ -88,7 +88,7 @@ class User extends \yii\db\ActiveRecord
      */
     public function getProfiles()
     {
-        return $this->hasMany(Profiles::className(), ['user_id' => 'id']);
+        return $this->hasMany(Profile::className(), ['user_id' => 'id']);
     }
 
     /**
@@ -98,6 +98,6 @@ class User extends \yii\db\ActiveRecord
      */
     public function getTasks()
     {
-        return $this->hasMany(Tasks::className(), ['author_id' => 'id']);
+        return $this->hasMany(Task::className(), ['author_id' => 'id']);
     }
 }

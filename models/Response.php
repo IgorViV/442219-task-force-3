@@ -37,8 +37,8 @@ class Response extends \yii\db\ActiveRecord
             [['created_at'], 'safe'],
             [['text_content'], 'string'],
             [['price', 'task_id', 'performer_id'], 'integer'],
-            [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['performer_id' => 'id']],
-            [['task_id'], 'exist', 'skipOnError' => true, 'targetClass' => Tasks::className(), 'targetAttribute' => ['task_id' => 'id']],
+            [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profile::className(), 'targetAttribute' => ['performer_id' => 'id']],
+            [['task_id'], 'exist', 'skipOnError' => true, 'targetClass' => Task::className(), 'targetAttribute' => ['task_id' => 'id']],
         ];
     }
 
@@ -64,7 +64,7 @@ class Response extends \yii\db\ActiveRecord
      */
     public function getPerformer()
     {
-        return $this->hasOne(Profiles::className(), ['id' => 'performer_id']);
+        return $this->hasOne(Profile::className(), ['id' => 'performer_id']);
     }
 
     /**
@@ -74,6 +74,6 @@ class Response extends \yii\db\ActiveRecord
      */
     public function getTask()
     {
-        return $this->hasOne(Tasks::className(), ['id' => 'task_id']);
+        return $this->hasOne(Task::className(), ['id' => 'task_id']);
     }
 }

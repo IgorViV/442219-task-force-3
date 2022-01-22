@@ -51,11 +51,11 @@ class Task extends \yii\db\ActiveRecord
             [['description'], 'string'],
             [['finance', 'author_id', 'category_id', 'city_id', 'status_id', 'performer_id'], 'integer'],
             [['title', 'latitude', 'longitude'], 'string', 'max' => 128],
-            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Categories::className(), 'targetAttribute' => ['category_id' => 'id']],
-            [['city_id'], 'exist', 'skipOnError' => true, 'targetClass' => Cities::className(), 'targetAttribute' => ['city_id' => 'id']],
-            [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['performer_id' => 'id']],
-            [['status_id'], 'exist', 'skipOnError' => true, 'targetClass' => Statuses::className(), 'targetAttribute' => ['status_id' => 'id']],
-            [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['author_id' => 'id']],
+            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::className(), 'targetAttribute' => ['category_id' => 'id']],
+            [['city_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::className(), 'targetAttribute' => ['city_id' => 'id']],
+            [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profile::className(), 'targetAttribute' => ['performer_id' => 'id']],
+            [['status_id'], 'exist', 'skipOnError' => true, 'targetClass' => Status::className(), 'targetAttribute' => ['status_id' => 'id']],
+            [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
     }
 
@@ -88,7 +88,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getAuthor()
     {
-        return $this->hasOne(Users::className(), ['id' => 'author_id']);
+        return $this->hasOne(User::className(), ['id' => 'author_id']);
     }
 
     /**
@@ -98,7 +98,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getCategory()
     {
-        return $this->hasOne(Categories::className(), ['id' => 'category_id']);
+        return $this->hasOne(Category::className(), ['id' => 'category_id']);
     }
 
     /**
@@ -108,7 +108,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getCity()
     {
-        return $this->hasOne(Cities::className(), ['id' => 'city_id']);
+        return $this->hasOne(City::className(), ['id' => 'city_id']);
     }
 
     /**
@@ -118,7 +118,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getFeedbacks()
     {
-        return $this->hasMany(Feedbacks::className(), ['task_id' => 'id']);
+        return $this->hasMany(Feedback::className(), ['task_id' => 'id']);
     }
 
     /**
@@ -128,7 +128,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getFiles()
     {
-        return $this->hasMany(Files::className(), ['task_id' => 'id']);
+        return $this->hasMany(File::className(), ['task_id' => 'id']);
     }
 
     /**
@@ -138,7 +138,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getPerformer()
     {
-        return $this->hasOne(Profiles::className(), ['id' => 'performer_id']);
+        return $this->hasOne(Profile::className(), ['id' => 'performer_id']);
     }
 
     /**
@@ -148,7 +148,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getResponses()
     {
-        return $this->hasMany(Responses::className(), ['task_id' => 'id']);
+        return $this->hasMany(Response::className(), ['task_id' => 'id']);
     }
 
     /**
@@ -158,6 +158,6 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getStatus()
     {
-        return $this->hasOne(Statuses::className(), ['id' => 'status_id']);
+        return $this->hasOne(Status::className(), ['id' => 'status_id']);
     }
 }

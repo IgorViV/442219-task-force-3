@@ -44,7 +44,7 @@ class Profile extends \yii\db\ActiveRecord
             [['phone'], 'string', 'max' => 11],
             [['telegram'], 'string', 'max' => 64],
             [['avatar_url'], 'string', 'max' => 2048],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['user_id' => 'id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 
@@ -82,7 +82,7 @@ class Profile extends \yii\db\ActiveRecord
      */
     public function getResponses()
     {
-        return $this->hasMany(Responses::className(), ['performer_id' => 'id']);
+        return $this->hasMany(Response::className(), ['performer_id' => 'id']);
     }
 
     /**
@@ -92,7 +92,7 @@ class Profile extends \yii\db\ActiveRecord
      */
     public function getTasks()
     {
-        return $this->hasMany(Tasks::className(), ['performer_id' => 'id']);
+        return $this->hasMany(Task::className(), ['performer_id' => 'id']);
     }
 
     /**
@@ -102,6 +102,6 @@ class Profile extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(Users::className(), ['id' => 'user_id']);
+        return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 }
