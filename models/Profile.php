@@ -72,7 +72,7 @@ class Profile extends \yii\db\ActiveRecord
      */
     public function getPerformersHasCategories()
     {
-        return $this->hasMany(PerformersHasCategories::className(), ['performer_id' => 'id']);
+        return $this->hasMany(Profile::className(), ['id' => 'id'])->viaTable('performers_has_categories', ['performer_id' => 'id']);
     }
 
     /**

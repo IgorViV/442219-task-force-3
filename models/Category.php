@@ -54,7 +54,7 @@ class Category extends \yii\db\ActiveRecord
      */
     public function getPerformersHasCategories()
     {
-        return $this->hasMany(PerformersHasCategories::className(), ['category_id' => 'id']);
+        return $this->hasMany(Category::className(), ['id' => 'id'])->viaTable('performers_has_categories', ['category_id' => 'id']);
     }
 
     /**
