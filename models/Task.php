@@ -19,7 +19,7 @@ use Yii;
  * @property int $category_id
  * @property int $city_id
  * @property int $status_id
- * @property int $performer_id
+ * @property int|null $performer_id
  *
  * @property Users $author
  * @property Categories $category
@@ -46,7 +46,7 @@ class Task extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['created_at', 'title', 'description', 'author_id', 'category_id', 'city_id', 'status_id', 'performer_id'], 'required'],
+            [['created_at', 'title', 'description', 'author_id', 'category_id', 'city_id', 'status_id'], 'required'],
             [['created_at', 'dedline'], 'safe'],
             [['description'], 'string'],
             [['finance', 'author_id', 'category_id', 'city_id', 'status_id', 'performer_id'], 'integer'],
@@ -88,7 +88,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getAuthor()
     {
-        return $this->hasOne(User::className(), ['id' => 'author_id']);
+        return $this->hasOne(Users::className(), ['id' => 'author_id']);
     }
 
     /**

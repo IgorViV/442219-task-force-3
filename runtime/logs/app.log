@@ -1094,3 +1094,510 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1642852045.5743
     'REQUEST_TIME' => 1642852045
 ]
+2022-01-23 21:30:55 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --count. Options available: --color, --interactive, --help, --silentExitOnException, --namespace, --globalFixtures in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php:173
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#4 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#5 {main}
+2022-01-23 21:30:55 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Игорь\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x00010608'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x0001060A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000A05EE'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '20084'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '8588'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Игорь'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Игорь'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Игорь\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/OpenServer/domains'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Игорь\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Игорь\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Игорь\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Игорь\\AppData\\Roaming\\npm;C:\\Users\\Игорь\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\Игорь\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Игорь\\OneDrive'
+    'PATH' => 'C:\\Users\\Игорь\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Игорь\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Игорь\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Игорь\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Игорь\\AppData\\Roaming\\npm;C:\\Users\\Игорь\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'Игорь'
+    'USERPROFILE' => 'C:\\Users\\Игорь'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1642962655.1614
+    'REQUEST_TIME' => 1642962655
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/generate'
+        2 => 'user'
+        3 => '--count=5'
+    ]
+    'argc' => 4
+]
+2022-01-23 21:31:36 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --count. Options available: --color, --interactive, --help, --silentExitOnException, --namespace, --globalFixtures in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php:173
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#4 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#5 {main}
+2022-01-23 21:31:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '116x32766 (116x31)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Игорь\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPOSER_CACHE_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\..\\..\\..\\userdata\\composer\\cache'
+    'COMPOSER_CAFILE' => 'c:\\openserver\\modules\\php\\PHP_8.0\\..\\..\\..\\userdata\\config\\cacert.pem'
+    'COMPOSER_HOME' => 'c:\\openserver\\modules\\php\\PHP_8.0\\..\\..\\..\\userdata\\composer'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00060A7A'
+    'ConEmuBaseDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x001C0858'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x00100A78'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '4976'
+    'ConEmuServerPID' => '3644'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'c:\\openserver'
+    'ConEmuWorkDrive' => 'c:'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'c:\\openserver'
+    'HOMEDRIVE' => 'c:'
+    'HOMEPATH' => '\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Игорь\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OneDrive' => 'C:\\Users\\Игорь\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Игорь\\OneDrive'
+    'OPENSSL_CONF' => 'c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.21\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\openserver\\modules\\conemu;C:\\openserver\\modules\\conemu\\ConEmu;c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.21\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1+Nginx_1.21;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'c:\\openserver\\modules\\php\\PHP_8.0\\php.exe'
+    'PHPDIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\'
+    'PHPRC' => 'c:\\openserver\\modules\\php\\PHP_8.0'
+    'PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_8.0\\php.exe'
+    'PHP_BINARY' => 'c:\\openserver\\modules\\php\\PHP_8.0\\php.exe'
+    'PHP_BINDIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\'
+    'PHP_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\'
+    'PHP_INI' => 'c:\\openserver\\modules\\php\\PHP_8.0\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'c:\\openserver\\modules\\php\\PHP_8.0\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'c:\\openserver\\modules\\php\\PHP_8.0\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'c:\\openserver\\userdata\\temp'
+    'TMP' => 'c:\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'Игорь'
+    'USERPROFILE' => 'C:\\Users\\Игорь'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1642962696.3659
+    'REQUEST_TIME' => 1642962696
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/generate'
+        2 => 'user'
+        3 => '--count=5'
+    ]
+    'argc' => 4
+]
+2022-01-23 21:32:05 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: fixture/generate in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#5 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "fixture/generate". in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#2 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#3 {main}
+2022-01-23 21:32:05 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Игорь\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x00010608'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x0001060A'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000A05EE'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '20084'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '8588'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Игорь'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Игорь'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Игорь\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/OpenServer/domains'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Игорь\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Игорь\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Игорь\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Игорь\\AppData\\Roaming\\npm;C:\\Users\\Игорь\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\Игорь\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Игорь\\OneDrive'
+    'PATH' => 'C:\\Users\\Игорь\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Игорь\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Игорь\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Игорь\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Игорь\\AppData\\Roaming\\npm;C:\\Users\\Игорь\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'Игорь'
+    'USERPROFILE' => 'C:\\Users\\Игорь'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1642962725.2027
+    'REQUEST_TIME' => 1642962725
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/generate'
+        2 => 'user'
+    ]
+    'argc' => 3
+]
+2022-01-24 07:25:57 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --count. Options available: --color, --interactive, --help, --silentExitOnException, --namespace, --globalFixtures in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php:173
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#4 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#5 {main}
+2022-01-24 07:25:56 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Игорь\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\Игорь'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Игорь'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\Игорь\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Игорь\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Игорь\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Игорь\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Игорь\\AppData\\Roaming\\npm;C:\\Users\\Игорь\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\Игорь\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Игорь\\OneDrive'
+    'PATH' => 'C:\\Users\\Игорь\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\Игорь\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Игорь\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Игорь\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Игорь\\AppData\\Roaming\\npm;C:\\Users\\Игорь\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'Игорь'
+    'USERPROFILE' => 'C:\\Users\\Игорь'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1642998356.8154
+    'REQUEST_TIME' => 1642998356
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/generate'
+        2 => 'user'
+        3 => '--count=10'
+    ]
+    'argc' => 4
+]

@@ -53,7 +53,7 @@ $config = [
         */
     ],
     'params' => $params,
-    'controllerMap' => [
+    /*'controllerMap' => [
         'fixture' => [
             'class' => 'yii\faker\FixtureController',
             'templatePath' => '@app/fixtures/templates',
@@ -61,6 +61,7 @@ $config = [
             'namespace' => 'common\fixtures',
         ],
     ],
+    */
 ];
 
 if (YII_ENV_DEV) {
