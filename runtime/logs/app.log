@@ -1601,3 +1601,2643 @@ $_SERVER = [
     ]
     'argc' => 4
 ]
+2022-01-24 11:18:51 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Invalid fixture namespace: "common\fixtures". Please, check your FixtureController::namespace parameter in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:532
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(417): yii\console\controllers\FixtureController->getFixturePath()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(122): yii\console\controllers\FixtureController->findFixtures()
+#2 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#11 {main}
+2022-01-24 11:18:51 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643012331.1841
+    'REQUEST_TIME' => 1643012331
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-24 11:20:34 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Invalid fixture namespace: "common\fixtures". Please, check your FixtureController::namespace parameter in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:532
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(417): yii\console\controllers\FixtureController->getFixturePath()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(122): yii\console\controllers\FixtureController->findFixtures()
+#2 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#11 {main}
+2022-01-24 11:20:34 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643012434.3176
+    'REQUEST_TIME' => 1643012434
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-24 11:21:41 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Invalid fixture namespace: "fixtures". Please, check your FixtureController::namespace parameter in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:532
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(417): yii\console\controllers\FixtureController->getFixturePath()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(122): yii\console\controllers\FixtureController->findFixtures()
+#2 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#11 {main}
+2022-01-24 11:21:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643012501.3447
+    'REQUEST_TIME' => 1643012501
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-24 11:26:29 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Invalid fixture namespace: "common\fixtures". Please, check your FixtureController::namespace parameter in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:532
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(417): yii\console\controllers\FixtureController->getFixturePath()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(122): yii\console\controllers\FixtureController->findFixtures()
+#2 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#11 {main}
+2022-01-24 11:26:29 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643012789.0544
+    'REQUEST_TIME' => 1643012789
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-24 13:30:11 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Invalid fixture namespace: "common\fixtures". Please, check your FixtureController::namespace parameter in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:532
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(417): yii\console\controllers\FixtureController->getFixturePath()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(122): yii\console\controllers\FixtureController->findFixtures()
+#2 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#10 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#11 {main}
+2022-01-24 13:30:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643020211.211
+    'REQUEST_TIME' => 1643020211
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-24 13:30:57 [-][-][-][error][yii\console\Exception] yii\console\Exception: No files were found for: "User".
+Check that files exist under fixtures path: 
+"C:\OpenServer\domains\taskforce/fixtures". in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:135
+Stack trace:
+#0 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#9 {main}
+2022-01-24 13:30:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '100x1000 (100x42)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643020257.0503
+    'REQUEST_TIME' => 1643020257
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-24 14:09:32 [-][-][-][error][Error] Error: Class "models\User" not found in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\test\ActiveFixture.php:68
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\test\ActiveFixture->init()
+#1 [internal function]: yii\base\BaseObject->__construct()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\test\FixtureTrait.php(207): yii\BaseYii::createObject()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php(156): yii\console\controllers\FixtureController->createFixtures()
+#7 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#12 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#13 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#14 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#15 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#16 {main}
+2022-01-24 14:09:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '180x1000 (180x51)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000106D2'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000106D4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x000506A0'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '17188'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '22492'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643022570.3594
+    'REQUEST_TIME' => 1643022570
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'User'
+    ]
+    'argc' => 3
+]
+2022-01-25 11:48:22 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾, Ñ‚.Ðº. ÐºÐ¾Ð½ÐµÑ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€ Ð¾Ñ‚Ð²ÐµÑ€Ð³ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð½Ð° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php:721
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php(721): PDO->__construct()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php(636): yii\db\Connection->createPdoInstance()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php(1061): yii\db\Connection->open()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php(1048): yii\db\Connection->getMasterPdo()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\MigrateController.php(369): yii\db\Schema->getTableSchema()
+#12 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#14 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#15 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#16 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#17 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#18 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#19 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#20 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#21 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾, Ñ‚.Ðº. ÐºÐ¾Ð½ÐµÑ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€ Ð¾Ñ‚Ð²ÐµÑ€Ð³ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð½Ð° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php:647
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php(1061): yii\db\Connection->open()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Connection.php(1048): yii\db\Connection->getMasterPdo()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\MigrateController.php(369): yii\db\Schema->getTableSchema()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(657): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate()
+#12 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#13 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#14 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#15 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#16 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#17 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#18 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#19 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾, Ñ‚.Ðº. ÐºÐ¾Ð½ÐµÑ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€ Ð¾Ñ‚Ð²ÐµÑ€Ð³ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð½Ð° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ
+)
+
+2022-01-25 11:48:18 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '180x1000 (180x51)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000408D8'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x0006086E'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x0006071A'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '14388'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '14296'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643100498.2679
+    'REQUEST_TIME' => 1643100498
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'create_groups_table'
+    ]
+    'argc' => 3
+]
+2022-01-25 13:35:23 [-][-][-][error][yii\console\Exception] yii\console\Exception: No files were found for: "city".
+Check that files exist under fixtures path: 
+"C:\OpenServer\domains\taskforce/fixtures". in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\controllers\FixtureController.php:135
+Stack trace:
+#0 [internal function]: yii\console\controllers\FixtureController->actionLoad()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#8 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#9 {main}
+2022-01-25 13:35:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '180x1000 (180x51)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000408D8'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x0006086E'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x0006071A'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '14388'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '14296'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643106923.637
+    'REQUEST_TIME' => 1643106923
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/load'
+        2 => 'city'
+    ]
+    'argc' => 3
+]
+2022-01-25 13:38:53 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: fixture/getTableSchema in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php:149
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php(182): yii\base\Controller->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#5 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "fixture/getTableSchema". in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#2 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#3 {main}
+2022-01-25 13:38:53 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '180x1000 (180x51)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000408D8'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x0006086E'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x0006071A'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '14388'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '14296'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643107133.0832
+    'REQUEST_TIME' => 1643107133
+    'argv' => [
+        0 => 'yii'
+        1 => 'fixture/getTableSchema'
+        2 => 'City'
+    ]
+    'argc' => 3
+]
+2022-01-26 13:49:41 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\base\InvalidArgumentException] yii\base\UnknownMethodException: Calling unknown method: app\models\Task::getcategory_id() in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1242): yii\base\Component->__call()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Query.php(249): yii\db\ActiveQuery->createCommand()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#8 C:\OpenServer\domains\taskforce\controllers\TasksController.php(23): yii\db\ActiveQuery->all()
+#9 [internal function]: app\controllers\TasksController->actionIndex()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#12 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#13 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#14 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#15 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#16 {main}
+
+Next yii\base\InvalidArgumentException: app\models\Task has no relation named "category_id". in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1245
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(562): yii\db\BaseActiveRecord->getRelation()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(462): yii\db\ActiveQuery->joinWithRelations()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\QueryBuilder.php(227): yii\db\ActiveQuery->prepare()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\QueryBuilder->build()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Query.php(249): yii\db\ActiveQuery->createCommand()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#7 C:\OpenServer\domains\taskforce\controllers\TasksController.php(23): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\TasksController->actionIndex()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#12 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#13 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#14 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2022-01-26 13:49:41 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '50422'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643194180.9954
+    'REQUEST_TIME' => 1643194180
+]
+2022-01-26 14:03:29 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dt_add' in 'order clause' in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#5 C:\OpenServer\domains\taskforce\controllers\TasksController.php(23): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dt_add' in 'order clause'
+The SQL being executed was: SELECT `tasks`.* FROM `tasks` LEFT JOIN `categories` ON `tasks`.`category_id` = `categories`.`id` WHERE `status_id`='1' ORDER BY `dt_add` DESC in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#5 C:\OpenServer\domains\taskforce\controllers\TasksController.php(23): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'dt_add' in 'order clause'
+)
+
+2022-01-26 14:03:28 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '50603'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643195008.904
+    'REQUEST_TIME' => 1643195008
+]
+2022-01-26 15:03:28 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][TypeError] TypeError: htmlspecialchars(): Argument #1 ($string) must be of type string, app\models\Category given in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php:118
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\helpers\BaseHtml.php(118): htmlspecialchars()
+#1 C:\OpenServer\domains\taskforce\views\tasks\index.php(26): yii\helpers\BaseHtml::encode()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(347): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#6 C:\OpenServer\domains\taskforce\controllers\TasksController.php(25): yii\base\Controller->render()
+#7 [internal function]: app\controllers\TasksController->actionIndex()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#12 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#13 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2022-01-26 15:03:28 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56938'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643198608.7545
+    'REQUEST_TIME' => 1643198608
+]
+2022-01-26 15:04:19 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on int in C:\OpenServer\domains\taskforce\views\tasks\index.php:26
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\views\tasks\index.php(26): yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(347): require('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#5 C:\OpenServer\domains\taskforce\controllers\TasksController.php(25): yii\base\Controller->render()
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2022-01-26 15:04:19 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56940'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643198659.8902
+    'REQUEST_TIME' => 1643198659
+]
+2022-01-26 16:07:26 [-][-][-][error][yii\console\Exception] yii\console\Exception: Unknown option: --field. Options available: --color, --interactive, --help, --silentExitOnException, --migrationPath, --migrationNamespaces, --compact, --templateFile, --migrationTable, --db, --templateFile, --fields, --useTablePrefix, --comment in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Controller.php:173
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#4 C:\OpenServer\domains\taskforce\yii(20): yii\base\Application->run()
+#5 {main}
+2022-01-26 16:07:26 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACLOCAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\aclocal;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\aclocal'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '180x1000 (180x51)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Roaming'
+    'CMDER_ROOT' => 'C:/cmder'
+    'COMMONPROGRAMFILES' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'IGOR-PC'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'CONFIG_SITE' => 'C:/cmder/vendor/git-for-windows/mingw64/etc/config.site'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs2' => ''
+    'ConEmuArgs' => '/Icon \"C:\\cmder\\icons\\cmder.ico\" /Title Cmder /dir \"\"'
+    'ConEmuBackHWND' => '0x000206CC'
+    'ConEmuBaseDir' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBaseDirShort' => 'C:\\cmder\\vendor\\conemu-maximus5\\ConEmu'
+    'ConEmuBuild' => '210912'
+    'ConEmuCfgDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'C:\\cmder\\vendor\\conemu-maximus5'
+    'ConEmuDrawHWND' => '0x000107A4'
+    'ConEmuDrive' => 'C:'
+    'ConEmuHWND' => '0x0003078C'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuPID' => '19532'
+    'ConEmuPalette' => 'Monokai'
+    'ConEmuServerPID' => '19740'
+    'ConEmuTask' => '{bash::bash}'
+    'ConEmuWorkDir' => 'E:\\'
+    'ConEmuWorkDrive' => 'E:'
+    'DISPLAY' => 'needs-to-be-defined'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EXEPATH' => 'C:\\cmder\\vendor\\git-for-windows\\bin'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOME' => 'C:\\Users\\ˆ£®àì'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ˆ£®àì'
+    'HOSTNAME' => 'Igor-PC'
+    'INFOPATH' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\local\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\info;C:\\cmder\\vendor\\git-for-windows\\usr\\info;C:\\cmder\\vendor\\git-for-windows\\share\\info'
+    'LANG' => 'ru_RU.UTF-8'
+    'LC_ALL' => 'ru_RU.UTF-8'
+    'LOCALAPPDATA' => 'C:\\Users\\ˆ£®àì\\AppData\\Local'
+    'LOGONSERVER' => '\\\\IGOR-PC'
+    'MANPATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\local\\man;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\share\\man;C:\\cmder\\vendor\\git-for-windows\\usr\\man;C:\\cmder\\vendor\\git-for-windows\\share\\man'
+    'MINGW_CHOST' => 'x86_64-w64-mingw32'
+    'MINGW_PACKAGE_PREFIX' => 'mingw-w64-x86_64'
+    'MINGW_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\plugins\\'
+    'MSYSTEM' => 'MINGW64'
+    'MSYSTEM_CARCH' => 'x86_64'
+    'MSYSTEM_CHOST' => 'x86_64-w64-mingw32'
+    'MSYSTEM_PREFIX' => 'C:/cmder/vendor/git-for-windows/mingw64'
+    'NUMBER_OF_PROCESSORS' => '6'
+    'OLDPWD' => 'C:/'
+    'ORIGINAL_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ORIGINAL_TEMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'ORIGINAL_TMP' => 'C:/Users/D395~1/AppData/Local/Temp'
+    'OS' => 'Windows_NT'
+    'OneDrive' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\ˆ£®àì\\OneDrive'
+    'PATH' => 'C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\bin;C:\\Program Files\\Git\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\local\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\ˆ£®àì\\bin;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\cmder\\vendor\\conemu-maximus5;C:\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile;C:\\Program Files (x86)\\Common Files\\Acronis\\VirtualFile64;C:\\Program Files (x86)\\Common Files\\Acronis\\SnapAPI;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\Brackets\\command;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\PuTTY;C:\\Program Files\\nodejs;C:\\OpenServer\\modules\\php\\PHP_8.0;C:\\ProgramData\\ComposerSetup\\bin;C:\\composer;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\ˆ£®àì\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ˆ£®àì\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\npm;C:\\Users\\ˆ£®àì\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\cmder;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\vendor_perl;C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\core_perl'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PKG_CONFIG_PATH' => 'C:\\cmder\\vendor\\git-for-windows\\mingw64\\lib\\pkgconfig;C:\\cmder\\vendor\\git-for-windows\\mingw64\\share\\pkgconfig'
+    'PLINK_PROTOCOL' => 'ssh'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e0a'
+    'PROGRAMFILES' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PS1' => '\\[\\033]0;$MSYSTEM:${PWD//[^[:ascii:]]/?}\\007\\]\\[\\033[32m\\]\\u@\\h \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\\033[0m\\]\\n? '
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files\\Intel\\Wired Networking\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PWD' => 'C:/OpenServer/domains/taskforce'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'SESSIONNAME' => 'Console'
+    'SHELL' => 'C:\\cmder\\vendor\\git-for-windows\\usr\\bin\\bash.exe'
+    'SHLVL' => '1'
+    'SSH_ASKPASS' => 'C:/cmder/vendor/git-for-windows/mingw64/libexec/git-core/git-gui--askpass'
+    'SYSTEMDRIVE' => 'C:'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TERM' => 'cygwin'
+    'TMP' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'TMPDIR' => 'C:\\Users\\D395~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'IGOR-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'IGOR-PC'
+    'USERNAME' => 'ˆ£®àì'
+    'USERPROFILE' => 'C:\\Users\\ˆ£®àì'
+    'WINDIR' => 'C:\\WINDOWS'
+    '_' => 'C:/OpenServer/modules/php/PHP_8.0/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1643202446.9081
+    'REQUEST_TIME' => 1643202446
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => 'add_address_column_to_tasks_table'
+        3 => '--field=address:varchar'
+    ]
+    'argc' => 4
+]
+2022-01-26 17:29:42 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined variable $task in C:\OpenServer\domains\taskforce\controllers\TasksController.php:24
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(24): yii\base\ErrorHandler->handleError()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:29:42 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '51393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643207382.5467
+    'REQUEST_TIME' => 1643207382
+]
+2022-01-26 17:30:08 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "created_at" in C:\OpenServer\domains\taskforce\controllers\TasksController.php:24
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(24): yii\base\ErrorHandler->handleError()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:30:08 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '51398'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643207408.9387
+    'REQUEST_TIME' => 1643207408
+]
+2022-01-26 17:35:21 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\base\ErrorException:2] yii\base\ErrorException: Undefined array key "created_at" in C:\OpenServer\domains\taskforce\controllers\TasksController.php:24
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(24): yii\base\ErrorHandler->handleError()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:35:20 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '51465'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643207720.9287
+    'REQUEST_TIME' => 1643207720
+]
+2022-01-26 17:38:15 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Undefined constant "app\controllers\MINUTE" in C:\OpenServer\domains\taskforce\controllers\TasksController.php:43
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(26): app\controllers\TasksController->getTimePublic()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:38:15 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '51505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643207895.7426
+    'REQUEST_TIME' => 1643207895
+]
+2022-01-26 17:46:27 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Undefined constant "app\controllers\HOUR" in C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\di\Container.php:411
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\BaseYii.php(345): yii\di\Container->get()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(666): yii\BaseYii::createObject()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(620): yii\base\Module->createControllerByID()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(546): yii\base\Module->createController()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2022-01-26 17:46:27 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643208387.4256
+    'REQUEST_TIME' => 1643208387
+]
+2022-01-26 17:53:23 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Undefined constant "Taskforce\utilities\MINUTE" in C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php:25
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(28): Taskforce\utilities\GetTimePublic::getTimePublic()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:53:22 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56183'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643208802.9624
+    'REQUEST_TIME' => 1643208802
+]
+2022-01-26 17:55:24 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Using $this when not in object context in C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php:25
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(28): Taskforce\utilities\GetTimePublic::getTimePublic()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:55:23 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643208923.9636
+    'REQUEST_TIME' => 1643208923
+]
+2022-01-26 17:57:11 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Undefined constant "Taskforce\utilities\HOUR" in C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php:28
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(28): Taskforce\utilities\GetTimePublic::getTimePublic()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:57:11 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56208'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643209031.1539
+    'REQUEST_TIME' => 1643209031
+]
+2022-01-26 17:58:21 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Undefined constant "Taskforce\utilities\HOUR" in C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php:31
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(28): Taskforce\utilities\GetTimePublic::getTimePublic()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 17:58:21 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56245'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643209101.2924
+    'REQUEST_TIME' => 1643209101
+]
+2022-01-26 18:00:49 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][Error] Error: Call to undefined function Taskforce\utilities\get_noun_plural_form() in C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php:33
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\controllers\TasksController.php(28): Taskforce\utilities\GetTimePublic::getTimePublic()
+#1 [internal function]: app\controllers\TasksController->actionIndex()
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2022-01-26 18:00:49 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56294'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643209249.4848
+    'REQUEST_TIME' => 1643209249
+]
+2022-01-26 18:08:24 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][TypeError] TypeError: Taskforce\utilities\GetPluralForm::getPluralForm(): Argument #1 ($number) must be of type int, float given, called in C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php on line 34 and defined in C:\OpenServer\domains\taskforce\src\utilities\GetPluralForm.php:30
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\src\utilities\GetTimePublic.php(34): Taskforce\utilities\GetPluralForm::getPluralForm()
+#1 C:\OpenServer\domains\taskforce\controllers\TasksController.php(28): Taskforce\utilities\GetTimePublic::getTimePublic()
+#2 [internal function]: app\controllers\TasksController->actionIndex()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2022-01-26 18:08:24 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56424'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643209704.4344
+    'REQUEST_TIME' => 1643209704
+]
+2022-01-26 18:19:14 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][error][yii\base\ErrorException:2] yii\base\ErrorException: Attempt to read property "name" on int in C:\OpenServer\domains\taskforce\views\tasks\index.php:26
+Stack trace:
+#0 C:\OpenServer\domains\taskforce\views\tasks\index.php(26): yii\base\ErrorHandler->handleError()
+#1 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(347): require('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#5 C:\OpenServer\domains\taskforce\controllers\TasksController.php(32): yii\base\Controller->render()
+#6 [internal function]: app\controllers\TasksController->actionIndex()
+#7 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\taskforce\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\taskforce\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2022-01-26 18:19:14 [127.0.0.1][-][j6gim5p0glgaltpr7sptd68ur54o88vb][info][application] $_GET = [
+    'r' => 'tasks'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'j6gim5p0glgaltpr7sptd68ur54o88vb'
+    '_csrf' => 'afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vyUROmaiPjxa72mLQvXOintuoE6Dl5BT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'taskforce'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=j6gim5p0glgaltpr7sptd68ur54o88vb; _csrf=afc60a168e2589652a5d3d5654cc6de1af635c18bd3514a8bb915480f262b28aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vyUROmaiPjxa72mLQvXOintuoE6Dl5BT%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0-Win10\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'taskforce'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/taskforce/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/taskforce/web/index.php'
+    'REMOTE_PORT' => '56590'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=tasks'
+    'REQUEST_URI' => '/index.php?r=tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1643210354.5087
+    'REQUEST_TIME' => 1643210354
+]
