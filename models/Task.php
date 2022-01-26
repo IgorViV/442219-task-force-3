@@ -20,6 +20,7 @@ use Yii;
  * @property int $city_id
  * @property int $status_id
  * @property int|null $performer_id
+ * @property string|null $address
  *
  * @property Users $author
  * @property Categories $category
@@ -48,7 +49,7 @@ class Task extends \yii\db\ActiveRecord
         return [
             [['created_at', 'title', 'description', 'author_id', 'category_id', 'city_id', 'status_id'], 'required'],
             [['created_at', 'dedline'], 'safe'],
-            [['description'], 'string'],
+            [['description', 'address'], 'string'],
             [['finance', 'author_id', 'category_id', 'city_id', 'status_id', 'performer_id'], 'integer'],
             [['title', 'latitude', 'longitude'], 'string', 'max' => 128],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::className(), 'targetAttribute' => ['category_id' => 'id']],
@@ -78,6 +79,7 @@ class Task extends \yii\db\ActiveRecord
             'city_id' => 'City ID',
             'status_id' => 'Status ID',
             'performer_id' => 'Performer ID',
+            'address' => 'Address',
         ];
     }
 
@@ -88,7 +90,7 @@ class Task extends \yii\db\ActiveRecord
      */
     public function getAuthor()
     {
-        return $this->hasOne(Users::className(), ['id' => 'author_id']);
+        return $this->hasOne(User::className(), ['id' => 'author_id']);
     }
 
     /**
