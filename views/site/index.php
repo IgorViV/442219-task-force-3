@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Taskforce';
+\Yii::$app->db->open();
 ?>
 
 <div class="center-block">

@@ -10,7 +10,7 @@ use app\models\City;
 class TestController extends Controller
 {
     /**
-     * Displays tets page.
+     * Displays test page.
      *
      * @return string
      */
