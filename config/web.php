@@ -43,25 +43,16 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
+                'tasks' => 'tasks/index',
             ],
         ],
-        */
     ],
     'params' => $params,
-    /*'controllerMap' => [
-        'fixture' => [
-            'class' => 'yii\faker\FixtureController',
-            'templatePath' => '@app/fixtures/templates',
-            'fixtureDataPath' => '@app/fixtures/data',
-            'namespace' => 'common\fixtures',
-        ],
-    ],
-    */
 ];
 
 if (YII_ENV_DEV) {

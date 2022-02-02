@@ -33,6 +33,13 @@ use Yii;
  */
 class Task extends \yii\db\ActiveRecord
 {
+    // public $filter;
+
+    // public function filterTasks() {
+    //     $query = self::find();
+        
+    // }
+
     /**
      * {@inheritdoc}
      */
