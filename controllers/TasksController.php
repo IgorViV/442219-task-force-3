@@ -19,11 +19,24 @@ class TasksController extends Controller
      */
     public function actionIndex()
     {
-        $filterForm = new FilterForm();
+        $filter = new FilterForm();
+        
         $query = Task::find()
             ->joinWith('category')
-            ->where(['status_id' => '1'])
-            ->orderBy('created_at DESC');
+            ->where(['status_id' => '1']);
+
+        if (Yii::$app->request->post()) {
+            $filter->load(Yii::$app->request->post());
+
+            if (array_sum($filter->categories)) {
+                $query->where(['category_id' => $filter->categories]);
+            }
+
+        } else {
+            $filter->categories = [];
+        }
+
+        $query->orderBy('created_at DESC'); 
 
         $tasks = $query->all();
 
@@ -31,12 +44,10 @@ class TasksController extends Controller
             $task->created_at = GetTimePublic::getTimePublic($task->created_at);
         }
 
-        $categories = Category::find()->all();
-
         return $this->render('index', [
-            'tasks' => $tasks, 
-            'categories' => $categories,
-            'models' => $filterForm,
+            'tasks' => $tasks,
+            'categories' => Category::find()->all(),
+            'model' => $filter,
         ]);
     }
 

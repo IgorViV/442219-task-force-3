@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\widgets\ActiveField;
+use yii\helpers\ArrayHelper;
 
 $this->title = 'Taskforce';
 
@@ -60,16 +61,10 @@ $this->title = 'Taskforce';
                 ]
             ]); ?>
                 <h4 class="head-card">Категории</h4>
-                <div class="form-group">
-                    <?php foreach($categories as $category): ?>
-                    <div>
-                        <input type="checkbox" id="<?= $category->icon; ?>">
-                        <label class="control-label" for="<?= $category->icon; ?>">
-                            <?= Html::encode($category->name); ?>
-                        </label>
-                    </div>                    
-                    <?php endforeach; ?>
-                </div>
+                <?php  foreach($categories as $category) : ?>
+                    <?=$form->field($model, 'categories[]')->checkbox(['value' => $category->id, 'checked ' => in_array($category->id, $model->categories), 'label' => $category->name]); ?><br>
+                <?php endforeach; ?>
+                
                 <h4 class="head-card">Дополнительно</h4>
                 <div class="form-group">
                     <div>
@@ -90,7 +85,7 @@ $this->title = 'Taskforce';
                         <option>24 часа</option>
                     </select>
                 </div>
-                <input type="button" class="button button--blue" value="Искать">
+                <?= Html::submitButton('Искать', ['class' => 'button button--blue']) ?>
             <?php ActiveForm::end(); ?>
         </div>
     </div>

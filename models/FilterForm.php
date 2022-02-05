@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use app\models\Category;
+use yii\base\Model;
 
 /**
  * This is the model class for table "cities".
@@ -13,21 +15,12 @@ use Yii;
  * @property string $period
  *
  */
-class FilterForm extends \yii\db\ActiveRecord
+class FilterForm extends Model
 {
     public $categories;
     public $no_address;
     public $without_performer; 
     public $period;
-    
-    
-    /**
-     * {@inheritdoc}
-     */
-    public static function tableName()
-    {
-        return 'cities';
-    }
 
     /**
      * {@inheritdoc}
@@ -35,8 +28,7 @@ class FilterForm extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            // [['name', 'lat', 'long'], 'required'],
-            // [['name', 'lat', 'long'], 'string', 'max' => 128],
+            [['categories', 'no_address', 'without_performer', 'period'], 'safe'],
         ];
     }
 

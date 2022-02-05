@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\data\ActiveDataProvider;
 
 /**
  * This is the model class for table "tasks".
@@ -33,12 +34,27 @@ use Yii;
  */
 class Task extends \yii\db\ActiveRecord
 {
-    // public $filter;
+    public $noAddress;
+    public $withoutPerformer;
 
-    // public function filterTasks() {
-    //     $query = self::find();
+    public function filterTasks($params) {
+        $query = self::find();
+        $dataProvider = new ActiveDataProvider(['query' => $query]);
         
-    // }
+        $this->load($params);
+
+        $query->filterWhere(['category_id' => $this->category_id]); // TODO array
+
+        if ($this->withoutPerformer) {
+            // $query->where(['!=', 'performer_id', NULL]);
+        }
+
+        if ($this->noAddress) {
+            // ...
+        }
+
+        return $dataProvider;
+    }
 
     /**
      * {@inheritdoc}
