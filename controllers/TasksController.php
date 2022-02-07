@@ -38,7 +38,7 @@ class TasksController extends Controller
 
         $query->orderBy('created_at DESC'); 
 
-        $tasks = $query->all();
+        $tasks = $query->all(); // asArray() ?
 
         foreach($tasks as $task) {
             $task->created_at = GetTimePublic::getTimePublic($task->created_at);

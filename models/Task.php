@@ -34,27 +34,27 @@ use yii\data\ActiveDataProvider;
  */
 class Task extends \yii\db\ActiveRecord
 {
-    public $noAddress;
-    public $withoutPerformer;
+    // public $noAddress;
+    // public $withoutPerformer;
 
-    public function filterTasks($params) {
-        $query = self::find();
-        $dataProvider = new ActiveDataProvider(['query' => $query]);
+    // public function filterTasks($params) {
+    //     $query = self::find();
+    //     $dataProvider = new ActiveDataProvider(['query' => $query]);
         
-        $this->load($params);
+    //     $this->load($params);
 
-        $query->filterWhere(['category_id' => $this->category_id]); // TODO array
+    //     $query->filterWhere(['category_id' => $this->category_id]); 
 
-        if ($this->withoutPerformer) {
-            // $query->where(['!=', 'performer_id', NULL]);
-        }
+    //     if ($this->withoutPerformer) {
+    //         // $query->where(['!=', 'performer_id', NULL]);
+    //     }
 
-        if ($this->noAddress) {
-            // ...
-        }
+    //     if ($this->noAddress) {
+    //         // ...
+    //     }
 
-        return $dataProvider;
-    }
+    //     return $dataProvider;
+    // }
 
     /**
      * {@inheritdoc}

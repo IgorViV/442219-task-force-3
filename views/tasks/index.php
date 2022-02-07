@@ -55,7 +55,7 @@ $this->title = 'Taskforce';
             <?php $form = ActiveForm::begin([
                 'id' => 'filter-form',
                 'fieldConfig' => [
-                    'template' => "{input}",
+                    'template' => "{input}\n{label}",
                     'options' => ['class' => 'form-group'],
                     'labelOptions' => ['class' => 'control-label']
                 ]

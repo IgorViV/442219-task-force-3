@@ -26,7 +26,6 @@ class TestController extends Controller
 
         if ($myCity) {
             $city = $myCity->name;
-            var_dump($city);
         }
 
         return $this->render('test', ['category' => $category, 'city' => $city]);
