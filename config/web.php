@@ -52,7 +52,6 @@ $config = [
             'enableStrictParsing' => false,
             'rules' => [
                 'test' => 'test/test',
-                // 'tasks/view' => 'tasks/view'
             ],
         ],
     ],

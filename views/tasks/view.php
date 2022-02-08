@@ -27,8 +27,8 @@ $this->title = 'Taskforce';
         <p class="map-address town">Москва</p>
         <p class="map-address">Новый арбат, 23, к. 1</p>
     </div>
-    <h4 class="head-regular">Отклики на задание</h4>
     <?php if($responses): ?>
+    <h4 class="head-regular">Отклики на задание</h4>
         <?php foreach($responses as $response): ?>
         <div class="response-card">
             <img class="customer-photo" src="img/man-glasses.png" width="146" height="156" alt="Фото заказчика">
@@ -52,8 +52,6 @@ $this->title = 'Taskforce';
             </div>
         </div>
         <?php endforeach; ?>
-    <?php else: ?>
-        <p>Пока откликов нет</p>
     <?php endif; ?>
 </div>
 <div class="right-column">

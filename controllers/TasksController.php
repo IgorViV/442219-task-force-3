@@ -13,7 +13,6 @@ use yii\web\NotFoundHttpException;
 
 class TasksController extends Controller
 {
-
     /**
      * Displays Tasks page.
      *
@@ -40,7 +39,7 @@ class TasksController extends Controller
 
         $query->orderBy('created_at DESC'); 
 
-        $tasks = $query->all(); // asArray() ?
+        $tasks = $query->all();
 
         foreach($tasks as $task) {
             $task->created_at = GetTimePublic::getTimePublic($task->created_at);
