@@ -6,8 +6,10 @@ use Yii;
 use yii\web\Controller;
 use app\models\Task;
 use app\models\Category;
+use app\models\Response;
 use app\models\FilterForm;
 use Taskforce\utilities\GetTimePublic;
+use yii\web\NotFoundHttpException;
 
 class TasksController extends Controller
 {
@@ -51,6 +53,28 @@ class TasksController extends Controller
         ]);
     }
 
-    
+    /**
+     * Displays Task view page.
+     *
+     * @return string
+     */
+    public function actionView($id)
+    {
+        $task = Task::findOne($id);
+        if (!$task) {
+            throw new NotFoundHttpException("Задача с ID $id не найдена");
+        }
+
+        $task->dedline = $task->dedline ? $task->dedline : 'Срок не определен';
+
+        $responses = Response::find()
+            ->where(['task_id' => $id])
+            ->all();
+
+        return $this->render('view', [
+            'task' => $task,
+            'responses' => $responses,
+            ]);
+    }
 
 }
