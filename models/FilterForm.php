@@ -3,7 +3,6 @@
 namespace app\models;
 
 use Yii;
-use app\models\Category;
 use yii\base\Model;
 
 /**
@@ -11,15 +10,22 @@ use yii\base\Model;
  *
  * @property array $categories
  * @property boolean $no_address
- * @property boolean $without_performer
+ * @property boolean $without_response
  * @property string $period
  *
  */
 class FilterForm extends Model
 {
-    public $categories;
-    public $no_address;
-    public $without_performer; 
+    const PERIOD_VALUES = [
+        '0' => 'Без ограничений',
+        '1' => '1 час',
+        '12'  => '12 часов',
+        '24' => '24 часа'
+    ];
+    
+    public $categories = [];
+    public $no_address = '0';
+    public $without_response = '0'; 
     public $period;
 
     /**
@@ -28,7 +34,7 @@ class FilterForm extends Model
     public function rules()
     {
         return [
-            [['categories', 'no_address', 'without_performer', 'period'], 'safe'],
+            [['categories', 'no_address', 'without_response', 'period'], 'safe'],
         ];
     }
 
@@ -39,7 +45,7 @@ class FilterForm extends Model
     {
         return [
             'no_adress' => 'Удаленная работа',
-            'without_performer' => 'Без откликов',
+            'without_response' => 'Без откликов',
         ];
     }
 }

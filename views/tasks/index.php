@@ -5,8 +5,6 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\widgets\ActiveField;
-use yii\helpers\ArrayHelper;
 
 $this->title = 'Taskforce';
 
@@ -19,7 +17,7 @@ $this->title = 'Taskforce';
             <a  href="#" class="link link--block link--big"><?= Html::encode($task->title) ?></a>
             <p class="price price--task"><?= Html::encode($task->finance) ?> ₽</p>
         </div>
-        <p class="info-text"><span class="current-time"><?= Html::encode($task->created_at) ?></span></p>
+        <p class="info-text"><span class="current-time"><?= Yii::$app->formatter->asRelativeTime($task->created_at) ?></span></p>
         <p class="task-text"><?= Html::encode($task->description) ?>
         </p>
         <div class="footer-task">
@@ -29,7 +27,8 @@ $this->title = 'Taskforce';
         </div>
     </div>
     <?php endforeach; ?>
-    <div class="pagination-wrapper">
+    <div class="pagination-wrapper">  
+        <!-- TODO make pagination -->
         <ul class="pagination-list">
             <li class="pagination-item mark">
                 <a href="#" class="link link--page"></a>
@@ -62,29 +61,13 @@ $this->title = 'Taskforce';
             ]); ?>
                 <h4 class="head-card">Категории</h4>
                 <?php  foreach($categories as $category) : ?>
-                    <?=$form->field($model, 'categories[]')->checkbox(['value' => $category->id, 'checked ' => in_array($category->id, $model->categories), 'label' => $category->name]); ?><br>
+                    <?=$form->field($model, 'categories[]')->checkbox(['value' => $category->id, 'checked' => in_array($category->id, $model->categories), 'label' => $category->name]); ?>
                 <?php endforeach; ?>
-                
                 <h4 class="head-card">Дополнительно</h4>
-                <div class="form-group">
-                    <div>
-                        <input id="no-address" type="checkbox">
-                        <label class="control-label" for="no-address">Удаленная работа</label>
-                    </div>
-                    <div>
-                        <input id="without-performer" type="checkbox">
-                        <label class="control-label" for="without-performer">Без откликов</label>
-                    </div>
-                </div>
+                    <?= $form->field($model, 'no_address')->checkbox($options = ['value' => 1, 'checked'=> !($model->no_address ===  '0')], $enclosedByLabel = false)->label('Удаленная работа'); ?>
+                    <?= $form->field($model, 'without_response')->checkbox($options = ['value' => 1, 'checked'=> !($model->without_response ===  '0')], $enclosedByLabel = false)->label('Без откликов'); ?>
                 <h4 class="head-card">Период</h4>
-                <div class="form-group">
-                    <label for="period-value"></label>
-                    <select id="period-value">
-                        <option>1 час</option>
-                        <option>12 часов</option>
-                        <option>24 часа</option>
-                    </select>
-                </div>
+                <?= $form->field($model, 'period', ['template' => "{input}"])->dropDownList($model::PERIOD_VALUES, ['id' => 'period-value']); ?>
                 <?= Html::submitButton('Искать', ['class' => 'button button--blue']) ?>
             <?php ActiveForm::end(); ?>
         </div>

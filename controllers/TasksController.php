@@ -7,7 +7,6 @@ use yii\web\Controller;
 use app\models\Task;
 use app\models\Category;
 use app\models\FilterForm;
-use Taskforce\utilities\GetTimePublic;
 
 class TasksController extends Controller
 {
@@ -20,37 +19,18 @@ class TasksController extends Controller
     public function actionIndex()
     {
         $filter = new FilterForm();
-        
-        $query = Task::find()
-            ->joinWith('category')
-            ->where(['status_id' => '1']);
+        $task = new Task();
 
         if (Yii::$app->request->post()) {
             $filter->load(Yii::$app->request->post());
-
-            if (array_sum($filter->categories)) {
-                $query->where(['category_id' => $filter->categories]);
-            }
-
-        } else {
-            $filter->categories = [];
         }
-
-        $query->orderBy('created_at DESC'); 
-
-        $tasks = $query->all(); // asArray() ?
-
-        foreach($tasks as $task) {
-            $task->created_at = GetTimePublic::getTimePublic($task->created_at);
-        }
-
+        
+        $tasks = $task->filterTasks(Yii::$app->request->post())->getModels(); 
+                
         return $this->render('index', [
             'tasks' => $tasks,
             'categories' => Category::find()->all(),
             'model' => $filter,
         ]);
     }
-
-    
-
 }
