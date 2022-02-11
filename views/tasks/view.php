@@ -5,10 +5,6 @@
 /* @var $responses array */ 
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
-use yii\widgets\ActiveField;
-use yii\helpers\ArrayHelper;
-use Taskforce\utilities\GetTimePublic;
 
 $this->title = 'Taskforce';
 
@@ -31,7 +27,7 @@ $this->title = 'Taskforce';
     <h4 class="head-regular">Отклики на задание</h4>
         <?php foreach($responses as $response): ?>
         <div class="response-card">
-            <img class="customer-photo" src="img/man-glasses.png" width="146" height="156" alt="Фото заказчика">
+            <img class="customer-photo" src="/img/man-glasses.png" width="146" height="156" alt="Фото заказчика">
             <div class="feedback-wrapper">
                 <a href="#" class="link link--block link--big">Астахов Павел</a>
                 <div class="response-wrapper">
@@ -43,7 +39,7 @@ $this->title = 'Taskforce';
                 </p>
             </div>
             <div class="feedback-wrapper">
-                <p class="info-text"><span class="current-time"><?= GetTimePublic::getTimePublic($response->created_at); ?></p>
+                <p class="info-text"><span class="current-time"><?= Yii::$app->formatter->asRelativeTime($response->created_at); ?></p>
                 <p class="price price--small"><?= Html::encode($response->price); ?> ₽</p>
             </div>
             <div class="button-popup">
@@ -61,10 +57,10 @@ $this->title = 'Taskforce';
             <dt>Категория</dt>
             <dd><?= Html::encode($task->category->name) ?></dd>
             <dt>Дата публикации</dt>
-            <dd><?= GetTimePublic::getTimePublic($task->created_at); ?></dd>
+            <dd><?= Yii::$app->formatter->asRelativeTime($task->created_at); ?></dd>
             <dt>Срок выполнения</dt>
             <!-- <dd>15 октября, 13:00</dd> -->
-            <dd><?= Html::encode($task->dedline) ?></dd>
+            <dd><?= Html::encode($task->dedline); ?></dd>
             <dt>Статус</dt>
             <!-- <dd>Открыт для новых заказов</dd> -->
             <dd><?= Html::encode($task->status->alias) ?></dd>

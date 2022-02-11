@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use app\models\FilterForm;
+use yii\db\Expression;
 use yii\data\ActiveDataProvider;
 
 /**
@@ -34,27 +36,51 @@ use yii\data\ActiveDataProvider;
  */
 class Task extends \yii\db\ActiveRecord
 {
-    // public $noAddress;
-    // public $withoutPerformer;
+    const MAX_PAGES = 5;
 
-    // public function filterTasks($params) {
-    //     $query = self::find();
-    //     $dataProvider = new ActiveDataProvider(['query' => $query]);
-        
-    //     $this->load($params);
+    public function filterTasks($params = null) {
+        $query = self::find();
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => self::MAX_PAGES,    
+            ],
+        ]);
 
-    //     $query->filterWhere(['category_id' => $this->category_id]); 
+        $query->joinWith('category')
+            ->where(['status_id' => '1']);
 
-    //     if ($this->withoutPerformer) {
-    //         // $query->where(['!=', 'performer_id', NULL]);
-    //     }
+        $filter = new FilterForm();
+        $filter->load($params);
 
-    //     if ($this->noAddress) {
-    //         // ...
-    //     }
+        if ($params) {
+            if (array_sum($filter->categories)) {
+                $query->where(['category_id' => $filter->categories]);
+            }
 
-    //     return $dataProvider;
-    // }
+            settype($filter->period, 'integer');
+            
+            if ($filter->period > 0) {
+                $expression = new Expression("DATE_SUB(NOW(), INTERVAL {$filter->period} HOUR)");
+                $query->andWhere(['>', 'created_at', $expression]);
+            }
+
+            if ($filter->no_address) {
+                print('HI NO_ADDRESS');
+                $query->andWhere(['address' => NULL]);
+            }
+
+            if ($filter->without_response) {
+                print('HI NO_RESPONSE');
+                $query->andWhere(['performer_id' => NULL]);
+            }
+        }
+
+        $query->orderBy('created_at DESC')
+            ->all();
+ 
+        return $dataProvider;
+    }
 
     /**
      * {@inheritdoc}
