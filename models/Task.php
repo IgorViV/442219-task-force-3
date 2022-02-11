@@ -3,6 +3,9 @@
 namespace app\models;
 
 use Yii;
+use app\models\FilterForm;
+use yii\db\Expression;
+use yii\data\ActiveDataProvider;
 
 /**
  * This is the model class for table "tasks".
@@ -33,6 +36,52 @@ use Yii;
  */
 class Task extends \yii\db\ActiveRecord
 {
+    const MAX_PAGES = 5;
+
+    public function filterTasks($params = null) {
+        $query = self::find();
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => self::MAX_PAGES,    
+            ],
+        ]);
+
+        $query->joinWith('category')
+            ->where(['status_id' => '1']);
+
+        $filter = new FilterForm();
+        $filter->load($params);
+
+        if ($params) {
+            if (array_sum($filter->categories)) {
+                $query->where(['category_id' => $filter->categories]);
+            }
+
+            settype($filter->period, 'integer');
+            
+            if ($filter->period > 0) {
+                $expression = new Expression("DATE_SUB(NOW(), INTERVAL {$filter->period} HOUR)");
+                $query->andWhere(['>', 'created_at', $expression]);
+            }
+
+            if ($filter->no_address) {
+                print('HI NO_ADDRESS');
+                $query->andWhere(['address' => NULL]);
+            }
+
+            if ($filter->without_response) {
+                print('HI NO_RESPONSE');
+                $query->andWhere(['performer_id' => NULL]);
+            }
+        }
+
+        $query->orderBy('created_at DESC')
+            ->all();
+ 
+        return $dataProvider;
+    }
+
     /**
      * {@inheritdoc}
      */
