@@ -65,7 +65,7 @@ class User extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getCities()
+    public function getCity()
     {
         return $this->hasOne(City::className(), ['id' => 'cities_id']);
     }
@@ -85,9 +85,9 @@ class User extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getProfiles()
+    public function getProfile()
     {
-        return $this->hasMany(Profile::className(), ['user_id' => 'id']);
+        return $this->hasOne(Profile::className(), ['user_id' => 'id']);
     }
 
     /**

@@ -8,6 +8,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'language' => 'ru-RU',
+    'layout' => 'main',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -51,6 +52,8 @@ $config = [
             'enableStrictParsing' => false,
             'rules' => [
                 'test' => 'test/test',
+                'tasks/view/<id:\d+>' => 'tasks/view',
+                'user/view/<id:\d+>' => 'user/view',
             ],
         ],
     ],

@@ -14,16 +14,16 @@ $this->title = 'Taskforce';
     <?php foreach($tasks as $task): ?>
     <div class="task-card">
         <div class="header-task">
-            <a  href="#" class="link link--block link--big"><?= Html::encode($task->title) ?></a>
-            <p class="price price--task"><?= Html::encode($task->finance) ?> ₽</p>
+            <a  href="/tasks/view/<?= Html::encode($task->id) ?>" class="link link--block link--big"><?= Html::encode($task->title) ?></a>
+            <p class="price price--task"><?= Html::encode($task->finance); ?> ₽</p>
         </div>
-        <p class="info-text"><span class="current-time"><?= Yii::$app->formatter->asRelativeTime($task->created_at) ?></span></p>
-        <p class="task-text"><?= Html::encode($task->description) ?>
+        <p class="info-text"><span class="current-time"><?= Yii::$app->formatter->asRelativeTime($task->created_at); ?></span></p>
+        <p class="task-text"><?= Html::encode($task->description); ?>
         </p>
         <div class="footer-task">
-            <p class="info-text town-text"><?= Html::encode($task->address) ?></p>
-            <p class="info-text category-text"><?= Html::encode($task->category->name) ?></p>
-            <a href="#" class="button button--black">Смотреть Задание</a>
+            <p class="info-text town-text"><?= Html::encode($task->address); ?></p>
+            <p class="info-text category-text"><?= Html::encode($task->category->name); ?></p>
+            <a href="/tasks/view/<?= Html::encode($task->id); ?>" class="button button--black">Смотреть Задание</a>
         </div>
     </div>
     <?php endforeach; ?>
@@ -68,7 +68,7 @@ $this->title = 'Taskforce';
                     <?= $form->field($model, 'without_response')->checkbox($options = ['value' => 1, 'checked'=> !($model->without_response ===  '0')], $enclosedByLabel = false)->label('Без откликов'); ?>
                 <h4 class="head-card">Период</h4>
                 <?= $form->field($model, 'period', ['template' => "{input}"])->dropDownList($model::PERIOD_VALUES, ['id' => 'period-value']); ?>
-                <?= Html::submitButton('Искать', ['class' => 'button button--blue']) ?>
+                <?= Html::submitButton('Искать', ['class' => 'button button--blue']); ?>
             <?php ActiveForm::end(); ?>
         </div>
     </div>
