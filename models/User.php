@@ -35,10 +35,11 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['registered_at', 'user_name', 'email', 'user_password', 'cities_id'], 'required'],
+            [['user_name', 'email', 'user_password', 'cities_id'], 'required'],
             [['registered_at'], 'safe'],
             [['is_performer', 'cities_id'], 'integer'],
             [['user_name', 'email', 'user_password'], 'string', 'max' => 128],
+            [['email'], 'email'],
             [['email'], 'unique'],
             [['cities_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::className(), 'targetAttribute' => ['cities_id' => 'id']],
         ];
@@ -52,11 +53,11 @@ class User extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'registered_at' => 'Registered At',
-            'user_name' => 'User Name',
+            'user_name' => 'Ваше имя',
             'email' => 'Email',
-            'user_password' => 'User Password',
+            'user_password' => 'Пароль',
             'is_performer' => 'Is Performer',
-            'cities_id' => 'Cities ID',
+            'cities_id' => 'Город',
         ];
     }
 
@@ -98,5 +99,13 @@ class User extends \yii\db\ActiveRecord
     public function getTasks()
     {
         return $this->hasMany(Task::className(), ['author_id' => 'id']);
+    }
+
+    /**
+     * 
+     */
+    public function setPassword($password)
+    {
+        $this->user_password = sha1($password);
     }
 }

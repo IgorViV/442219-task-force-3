@@ -6,7 +6,7 @@ use Yii;
 use yii\base\Model;
 
 /**
- * This is the model class for table "cities".
+ * This is the model class for filter form page Tasks.
  *
  * @property array $categories
  * @property boolean $no_address

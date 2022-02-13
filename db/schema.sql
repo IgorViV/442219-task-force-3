@@ -30,7 +30,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `taskforce`.`users` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `registered_at` DATETIME NOT NULL,
+  `registered_at` DATETIME NOT NULL DEFAULT NOW(),
   `user_name` VARCHAR(128) NOT NULL,
   `email` VARCHAR(128) NOT NULL,
   `user_password` VARCHAR(128) NOT NULL,

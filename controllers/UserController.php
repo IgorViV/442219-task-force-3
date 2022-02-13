@@ -5,15 +5,10 @@ namespace app\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\User;
-use app\models\Task;
-use app\models\Category;
-use app\models\Response;
-use app\models\FilterForm;
-use Taskforce\utilities\GetTimePublic;
 use yii\web\NotFoundHttpException;
 
 class UserController extends Controller
-{
+{    
     /**
      * Displays User profile page.
      *
@@ -30,5 +25,4 @@ class UserController extends Controller
             'user' => $user,
             ]);
     }
-
 }

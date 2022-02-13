@@ -66,12 +66,10 @@ class Task extends \yii\db\ActiveRecord
             }
 
             if ($filter->no_address) {
-                print('HI NO_ADDRESS');
                 $query->andWhere(['address' => NULL]);
             }
 
             if ($filter->without_response) {
-                print('HI NO_RESPONSE');
                 $query->andWhere(['performer_id' => NULL]);
             }
         }
