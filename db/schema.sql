@@ -96,7 +96,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `taskforce`.`tasks` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `created_at` DATETIME NOT NULL,
+  `created_at` DATETIME NOT NULL DEFAULT NOW(),
   `title` VARCHAR(128) NOT NULL,
   `description` TEXT NOT NULL,
   `latitude` VARCHAR(128) NULL,
@@ -148,7 +148,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `taskforce`.`responses` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `created_at` DATETIME NOT NULL,
+  `created_at` DATETIME NOT NULL DEFAULT NOW(),
   `text_content` TEXT NULL,
   `price` INT NULL,
   `task_id` INT UNSIGNED NOT NULL,
@@ -174,7 +174,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `taskforce`.`feedbacks` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `created_at` DATETIME NOT NULL,
+  `created_at` DATETIME NOT NULL DEFAULT NOW(),
   `comment` TEXT NULL,
   `evaluation` INT NOT NULL,
   `author_id` INT UNSIGNED NOT NULL,

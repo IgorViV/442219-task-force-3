@@ -11,6 +11,7 @@ use Yii;
  * @property string $user_name
  * @property string $email
  * @property string $user_password
+ * @property string $repeat_user_password
  * @property int|null $is_performer
  * @property int $cities_id
  *
@@ -21,6 +22,8 @@ use Yii;
  */
 class User extends \yii\db\ActiveRecord
 {
+    public $repeat_user_password;
+
     /**
      * {@inheritdoc}
      */
@@ -36,9 +39,10 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['user_name', 'email', 'user_password', 'cities_id'], 'required'],
-            [['registered_at'], 'safe'],
+            [['registered_at', 'repeat_user_password'], 'safe'],
             [['is_performer', 'cities_id'], 'integer'],
             [['user_name', 'email', 'user_password'], 'string', 'max' => 128],
+            [['repeat_user_password'], 'compare', 'compareAttribute'=>'user_password'],
             [['email'], 'email'],
             [['email'], 'unique'],
             [['cities_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::className(), 'targetAttribute' => ['cities_id' => 'id']],
@@ -56,6 +60,7 @@ class User extends \yii\db\ActiveRecord
             'user_name' => 'Ваше имя',
             'email' => 'Email',
             'user_password' => 'Пароль',
+            'repeat_user_password' => 'Повтор пароля',
             'is_performer' => 'Is Performer',
             'cities_id' => 'Город',
         ];

@@ -52,6 +52,7 @@ $config = [
             'enableStrictParsing' => false,
             'rules' => [
                 'test' => 'test/test',
+                'signup' => 'user/signup',
                 'tasks/view/<id:\d+>' => 'tasks/view',
                 'user/view/<id:\d+>' => 'user/view',
             ],
