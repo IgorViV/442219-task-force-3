@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use Yii;
 use yii\web\Controller;
 use app\models\Category;
 use app\models\City;

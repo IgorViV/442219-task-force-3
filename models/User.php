@@ -110,7 +110,7 @@ class User extends ActiveRecord implements IdentityInterface
 
     // ========== Identity Interface =============
     /**
-     * 
+     * {@inheritdoc}
      */
     public static function findIdentity($id)
     {
@@ -122,6 +122,9 @@ class User extends ActiveRecord implements IdentityInterface
         // return static::findOne(['access_token' => $token]);
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function getId()
     {
         return $this->id;
@@ -138,7 +141,7 @@ class User extends ActiveRecord implements IdentityInterface
     }
 
     /**
-     *  // TODO Refactoring
+     *  {@inheritdoc}
      */
     public function setPassword($password)
     {

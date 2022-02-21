@@ -3,7 +3,6 @@
 namespace app\controllers;
 
 use Yii;
-use yii\web\Controller;
 use yii\filters\AccessControl;
 use app\models\User;
 use app\models\City;
@@ -13,19 +12,19 @@ use yii\web\Response;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
 
-class UserController extends Controller
+class UserController extends SecuredController
 {    
     public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::class,
-                'only' => ['view'],
+                'only' => ['login'],
                 'rules' => [
                     [
                         'allow' => true,
-                        'actions' => ['view'],
-                        'roles' => ['?'] // TODO Set roles
+                        'actions' => ['login'],
+                        'roles' => ['?'] 
                     ]
                 ]
             ], 
@@ -112,7 +111,7 @@ class UserController extends Controller
                 // print_r(Yii::$app->user->getId()); 
                 // exit;
 
-                return $this->redirect('/tasks');
+                return $this->redirect('/tasks'); // при переходе уже ГОСТЬ
             }
         }
 
