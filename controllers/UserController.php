@@ -4,8 +4,10 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use yii\filters\AccessControl;
 use app\models\User;
 use app\models\City;
+use app\models\LoginForm;
 use yii\web\NotFoundHttpException;
 use yii\web\Response;
 use yii\widgets\ActiveForm;
@@ -13,6 +15,23 @@ use yii\helpers\ArrayHelper;
 
 class UserController extends Controller
 {    
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'only' => ['view'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'actions' => ['view'],
+                        'roles' => ['?'] // TODO Set roles
+                    ]
+                ]
+            ], 
+        ];
+    }
+    
     /**
      * Displays User profile page.
      *
@@ -61,5 +80,54 @@ class UserController extends Controller
             'model' => $user,
             'cities' => $cities,
         ]);
+    }
+
+    /**
+     * Login action.
+     *
+     * @return Response|string
+     */
+    public function actionLogin()
+    {
+        
+
+        $loginForm = new LoginForm;
+
+        if (Yii::$app->request->getIsPost()) {
+            $loginForm->load(Yii::$app->request->post());
+
+            if (Yii::$app->request->isAjax) {
+                Yii::$app->response->format = Response::FORMAT_JSON;
+
+                return ActiveForm::validate($loginForm);
+            }
+           
+            if ($loginForm->validate()) {
+                
+                Yii::$app->user->login($loginForm->getUser());
+                var_dump(Yii::$app->user->getIsGuest());
+                // TODO Delete
+                // ЗДЕСЬ ВСЕ ЧЕТКО ПОКАЗЫВАЕТ, ЧТО Я ЗАЛОГИНИЛСЯ
+                // print_r(Yii::$app->user->identity->user_name);
+                // print_r(Yii::$app->user->getId()); 
+                // exit;
+
+                return $this->redirect('/tasks');
+            }
+        }
+
+        return $this->goHome();
+    }
+
+    /**
+     * Logout action.
+     *
+     * @return Response
+     */
+    public function actionLogout()
+    {
+        Yii::$app->user->logout(false);
+
+        return $this->goHome();
     }
 }

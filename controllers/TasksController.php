@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use yii\filters\AccessControl;
 use app\models\Task;
 use app\models\Category;
 use app\models\Response;
@@ -12,6 +13,21 @@ use yii\web\NotFoundHttpException;
 
 class TasksController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::class,
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['?'] // TODO Set roles
+                    ]
+                ]
+            ]
+        ];
+    }
+
     /**
      * Displays Tasks page.
      *

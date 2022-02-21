@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yii\web\IdentityInterface;
 /**
  * This is the model class for table "users".
  *
@@ -20,7 +22,7 @@ use Yii;
  * @property Profiles[] $profiles
  * @property Tasks[] $tasks
  */
-class User extends \yii\db\ActiveRecord
+class User extends ActiveRecord implements IdentityInterface
 {
     public $repeat_user_password;
 
@@ -106,11 +108,40 @@ class User extends \yii\db\ActiveRecord
         return $this->hasMany(Task::className(), ['author_id' => 'id']);
     }
 
+    // ========== Identity Interface =============
     /**
      * 
      */
+    public static function findIdentity($id)
+    {
+        self::findOne($id);
+    }
+
+    public static function findIdentityByAccessToken($token, $type = null)
+    {
+        // return static::findOne(['access_token' => $token]);
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getAuthKey()
+    {
+        // return $this->authKey;
+    }
+
+    public function validateAuthKey($authKey)
+    {
+        // return $this->authKey === $authKey;
+    }
+
+    /**
+     *  // TODO Refactoring
+     */
     public function setPassword($password)
     {
-        $this->user_password = sha1($password);
+        $this->user_password = Yii::$app->security->generatePasswordHash($password);
     }
 }
