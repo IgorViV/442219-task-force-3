@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yii\web\IdentityInterface;
 /**
  * This is the model class for table "users".
  *
@@ -11,6 +13,7 @@ use Yii;
  * @property string $user_name
  * @property string $email
  * @property string $user_password
+ * @property string $repeat_user_password
  * @property int|null $is_performer
  * @property int $cities_id
  *
@@ -19,8 +22,10 @@ use Yii;
  * @property Profiles[] $profiles
  * @property Tasks[] $tasks
  */
-class User extends \yii\db\ActiveRecord
+class User extends ActiveRecord implements IdentityInterface
 {
+    public $repeat_user_password;
+
     /**
      * {@inheritdoc}
      */
@@ -36,9 +41,10 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['user_name', 'email', 'user_password', 'cities_id'], 'required'],
-            [['registered_at'], 'safe'],
+            [['registered_at', 'repeat_user_password'], 'safe'],
             [['is_performer', 'cities_id'], 'integer'],
             [['user_name', 'email', 'user_password'], 'string', 'max' => 128],
+            [['repeat_user_password'], 'compare', 'compareAttribute'=>'user_password'],
             [['email'], 'email'],
             [['email'], 'unique'],
             [['cities_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::className(), 'targetAttribute' => ['cities_id' => 'id']],
@@ -56,6 +62,7 @@ class User extends \yii\db\ActiveRecord
             'user_name' => 'Ваше имя',
             'email' => 'Email',
             'user_password' => 'Пароль',
+            'repeat_user_password' => 'Повтор пароля',
             'is_performer' => 'Is Performer',
             'cities_id' => 'Город',
         ];
@@ -101,11 +108,43 @@ class User extends \yii\db\ActiveRecord
         return $this->hasMany(Task::className(), ['author_id' => 'id']);
     }
 
+    // ========== Identity Interface =============
     /**
-     * 
+     * {@inheritdoc}
+     */
+    public static function findIdentity($id)
+    {
+        self::findOne($id);
+    }
+
+    public static function findIdentityByAccessToken($token, $type = null)
+    {
+        // return static::findOne(['access_token' => $token]);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getAuthKey()
+    {
+        // return $this->authKey;
+    }
+
+    public function validateAuthKey($authKey)
+    {
+        // return $this->authKey === $authKey;
+    }
+
+    /**
+     *  {@inheritdoc}
      */
     public function setPassword($password)
     {
-        $this->user_password = sha1($password);
+        $this->user_password = Yii::$app->security->generatePasswordHash($password);
     }
 }

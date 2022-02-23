@@ -13,6 +13,7 @@ $this->title = 'Taskforce';
     <div class="registration-form regular-form">
         <?php $form = ActiveForm::begin([
             'id' => 'registration-form',
+            'enableAjaxValidation' => true,
             'fieldConfig' => [
                 'template' => "{label}\n{input}\n{error}",
                 'labelOptions' => ['class' => 'control-label'],
