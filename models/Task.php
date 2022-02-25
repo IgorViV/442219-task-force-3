@@ -37,6 +37,7 @@ use yii\data\ActiveDataProvider;
 class Task extends \yii\db\ActiveRecord
 {
     const MAX_PAGES = 5;
+    public $files;
 
     public function filterTasks($params = null) {
         $query = self::find();
@@ -99,6 +100,7 @@ class Task extends \yii\db\ActiveRecord
             [['description', 'address'], 'string'],
             [['finance', 'author_id', 'category_id', 'city_id', 'status_id', 'performer_id'], 'integer'],
             [['title', 'latitude', 'longitude'], 'string', 'max' => 128],
+            [['files'], 'file', 'skipOnEmpty' => true, 'extensions' => null, 'maxFiles' => 4],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::className(), 'targetAttribute' => ['category_id' => 'id']],
             [['city_id'], 'exist', 'skipOnError' => true, 'targetClass' => City::className(), 'targetAttribute' => ['city_id' => 'id']],
             [['performer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profile::className(), 'targetAttribute' => ['performer_id' => 'id']],
@@ -115,18 +117,18 @@ class Task extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'created_at' => 'Created At',
-            'title' => 'Title',
-            'description' => 'Description',
+            'title' => 'Опишите суть работы',
+            'description' => 'Подробности задания',
             'latitude' => 'Latitude',
             'longitude' => 'Longitude',
-            'finance' => 'Finance',
-            'dedline' => 'Dedline',
+            'finance' => 'Бюджет',
+            'dedline' => 'Срок исполнения',
             'author_id' => 'Author ID',
             'category_id' => 'Category ID',
             'city_id' => 'City ID',
             'status_id' => 'Status ID',
             'performer_id' => 'Performer ID',
-            'address' => 'Address',
+            'address' => 'Локация',
         ];
     }
 
@@ -208,5 +210,17 @@ class Task extends \yii\db\ActiveRecord
     public function getStatus()
     {
         return $this->hasOne(Status::className(), ['id' => 'status_id']);
+    }
+
+    public function upload()
+    {
+        if ($this->validate()) { 
+            foreach ($this->files as $file) {
+                $file->saveAs('uploads/' . $file->baseName . '.' . $file->extension);
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 }
