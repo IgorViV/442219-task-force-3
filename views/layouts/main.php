@@ -80,6 +80,7 @@ AppAsset::register($this);
 <main class="main-content container">
     <?= $content ?>
 </main>
+<div class="overlay"></div>
 <?php $this->endBody() ?>
 </body>
 </html>
